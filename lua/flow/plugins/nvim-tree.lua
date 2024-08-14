@@ -10,7 +10,7 @@ return {
 
     nvimtree.setup({
       view = {
-        width = 35,
+        width = 65,
         relativenumber = true,
       },
       -- change folder arrow icons
@@ -24,6 +24,15 @@ return {
               arrow_closed = "", -- arrow when folder is closed
               arrow_open = "", -- arrow when folder is open
             },
+            git = {
+              unstaged = "",
+              staged = "",
+              unmerged = "",
+              renamed = "",
+              deleted = "",
+              untracked = "",
+              ignored = "",
+            }
           },
         },
       },

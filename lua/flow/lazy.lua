@@ -11,4 +11,15 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("flow.plugins", { rocks = { enabled = false } })
+require("lazy").setup("flow.plugins", {
+  rocks = { 
+    enabled = false 
+  }, 
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
