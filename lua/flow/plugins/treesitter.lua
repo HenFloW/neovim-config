@@ -9,8 +9,11 @@ return {
 
 		-- configure treesitter
 		treesitter.setup({ -- enable syntax highlighting
-			sync_install = true,
+			sync_install = false,
 			auto_install = true,
+      modules = {},
+			ignore_install = {},
+			-- enable autotagging (w/ nvim-ts-autotag plugin)
 			highlight = {
 				enable = true,
 			},
